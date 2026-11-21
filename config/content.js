@@ -41,8 +41,8 @@ window.restaurantContent = {
       "en": "Reservations"
     },
     "events": {
-      "vi": "Tiệc & sự kiện",
-      "en": "Private events"
+      "vi": "Địa điểm của chúng tôi",
+      "en": "Our Venue"
     },
     "hours": {
       "vi": "Giờ mở cửa",
@@ -265,43 +265,99 @@ window.restaurantContent = {
     },
     "events": {
       "kicker": {
-        "vi": "Những dịp đáng nhớ",
-        "en": "For memorable occasions"
+        "vi": "Sự kiện tại Motueka",
+        "en": "Gather at Elevation"
       },
       "title": {
-        "vi": "Tiệc & sự kiện",
-        "en": "Private events"
+        "vi": "Địa điểm của chúng tôi",
+        "en": "Our Venue"
       },
       "intro": {
-        "vi": "Từ sinh nhật ấm cúng đến buổi gặp mặt đối tác, Elevation Cafe Motueka NZ cùng bạn chuẩn bị một bữa ăn phù hợp với từng dịp.",
-        "en": "From an intimate birthday dinner to a gathering with colleagues, Elevation Cafe Motueka NZ can help you plan a meal that suits the occasion."
+        "vi": "Một không gian thân thiện, linh hoạt tại Motueka cho những dịp kỷ niệm, buổi gặp mặt công việc và sự kiện cộng đồng.",
+        "en": "A welcoming, adaptable Motueka venue for celebrations, work gatherings, and community events."
       },
       "notes": [
         {
+          "image": "images/venue/private-functions.jpg",
+          "imageAlt": {
+            "vi": "Nhân viên rót bia từ vòi tại quầy bar",
+            "en": "A bartender pouring a drink at the cafe bar"
+          },
           "heading": {
-            "vi": "Thực đơn cho nhóm",
-            "en": "Menus for groups"
+            "vi": "Chức năng riêng tư",
+            "en": "Private Functions"
           },
           "text": {
-            "vi": "Trao đổi về số khách, khẩu vị, chế độ ăn và ngân sách để lựa chọn món ăn hài hòa.",
-            "en": "Share your group size, tastes, dietary preferences, and budget so we can suggest a balanced selection of dishes."
+            "vi": "Tổ chức sinh nhật, ngày kỷ niệm, đám cưới hoặc sự kiện của công ty và tổ chức tại Motueka. Chúng tôi sẽ giúp bạn chuẩn bị một buổi tiệc vui vẻ, dễ dàng và phù hợp với ngân sách.",
+            "en": "Celebrate birthdays, anniversaries, weddings, or work and organisation gatherings in the heart of Motueka. We can help make your event enjoyable, easy to plan, and a good fit for your budget."
+          },
+          "button": {
+            "vi": "Gửi yêu cầu",
+            "en": "Enquire Now"
           }
         },
         {
+          "image": "images/venue/quiz-fundraiser.jpg",
+          "imageAlt": {
+            "vi": "Không gian ăn uống của quán với bàn ghế và quầy bar",
+            "en": "Cafe dining room with tables and bar seating"
+          },
           "heading": {
-            "vi": "Chăm chút từng chi tiết",
-            "en": "Thoughtful details"
+            "vi": "Đêm đố vui & sự kiện gây quỹ",
+            "en": "Quiz Nights / Fund Raiser Events"
           },
           "text": {
-            "vi": "Chia sẻ ý tưởng, cách sắp xếp bàn và những mong muốn riêng trong lời nhắn đặt bàn.",
-            "en": "Tell us about your plans, seating preferences, and any special requests in your reservation message."
+            "vi": "Cùng cộng đồng tổ chức đêm đố vui hoặc sự kiện gây quỹ. Chúng tôi luôn sẵn lòng hỗ trợ các tổ chức địa phương và quảng bá sự kiện miễn phí trên các kênh kỹ thuật số của quán.",
+            "en": "Bring the community together for a quiz night or fundraiser. We are keen to support local organisations and can promote your event for free on the cafe's digital channels."
+          },
+          "button": {
+            "vi": "Gửi yêu cầu",
+            "en": "Enquire Now"
           }
+        },
+        {
+          "image": "images/venue/venue-offers.jpg",
+          "imageAlt": {
+            "vi": "Khách hàng dùng bữa trong không gian rộng rãi của quán",
+            "en": "Customers dining inside the spacious cafe"
+          },
+          "heading": {
+            "vi": "Địa điểm của chúng tôi có",
+            "en": "Our Venue Offers"
+          },
+          "text": {
+            "vi": "Không gian phù hợp cho nhiều loại hoạt động, với các lựa chọn chỗ ngồi linh hoạt và dịch vụ ăn uống theo nhu cầu.",
+            "en": "A flexible space for a variety of occasions, with adaptable seating and catering arranged to suit your event."
+          },
+          "features": [
+            {
+              "vi": "Sức chứa lên đến 120 khách",
+              "en": "Capacity for up to 120 guests"
+            },
+            {
+              "vi": "Nhà vệ sinh có lối tiếp cận xe lăn",
+              "en": "Wheelchair-accessible toilets"
+            },
+            {
+              "vi": "Đồ ăn nhẹ và quầy bar đầy đủ",
+              "en": "Snacks and a full bar"
+            },
+            {
+              "vi": "Dịch vụ ăn uống đặc biệt theo sắp xếp",
+              "en": "Special catering by arrangement"
+            },
+            {
+              "vi": "Bãi đỗ xe miễn phí phía sau quán cho khách",
+              "en": "Free off-street parking behind the cafe for customers"
+            }
+          ],
+          "button": {
+            "vi": "Gọi ngay",
+            "en": "Call Now"
+          },
+          "href": "tel:+6435286103"
         }
-      ],
-      "button": {
-        "vi": "Trao đổi về buổi tiệc",
-        "en": "Plan your gathering"
-      }
+      ]
     },
     "hours": {
       "kicker": {

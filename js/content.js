@@ -121,10 +121,37 @@
       const notes = template.querySelector('[data-event-notes]');
       for (const note of page.notes) {
         const node = element('div', undefined, 'navigation-note');
-        node.append(element('h3', note.heading), element('p', note.text));
+        const copy = element('div', undefined, 'navigation-note-copy');
+        copy.append(element('h3', note.heading), element('p', note.text));
+        if (note.image) {
+          const image = element('img');
+          image.src = note.image;
+          image.alt = note.imageAlt || '';
+          image.width = 1200;
+          image.height = 800;
+          image.loading = 'lazy';
+          image.decoding = 'async';
+          node.append(image);
+        }
+        if (note.features) {
+          const list = element('ul', undefined, 'navigation-note-features');
+          note.features.forEach(feature => list.append(element('li', feature)));
+          copy.append(list);
+        }
+        if (note.button) {
+          const button = element(note.href ? 'a' : 'button', note.button, 'navigation-primary venue-note-cta');
+          if (note.href) button.href = note.href;
+          else {
+            button.type = 'button';
+            button.dataset.navigationView = 'contact';
+            button.setAttribute('aria-haspopup', 'dialog');
+            button.setAttribute('aria-controls', 'navigation-dialog');
+          }
+          copy.append(button);
+        }
+        node.prepend(copy);
         notes.append(node);
       }
-      set('[data-navigation-view="reservation"]', page.button, template);
     }
     if (name === 'hours') {
       const list = template.querySelector('.navigation-hours');
