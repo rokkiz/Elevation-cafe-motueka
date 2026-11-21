@@ -1608,10 +1608,12 @@ body.dish-open .table-wheel  {
 }
 
 .navigation-note .venue-note-cta {
+  display: block;
   grid-column: 1;
   grid-row: 4;
   justify-self: start;
-  width: auto;
+  width: max-content;
+  max-width: 100%;
   min-width: 102px;
   margin-top: 16px;
   text-align: center;
