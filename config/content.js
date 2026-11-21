@@ -139,105 +139,134 @@ window.restaurantContent = {
   "pages": {
     "about": {
       "kicker": {
-        "vi": "Câu chuyện Elevation Cafe Motueka NZ",
-        "en": "The Elevation Cafe Motueka NZ story"
+        "vi": "Câu chuyện của chúng tôi",
+        "en": "Our Story"
       },
       "title": [
         {
-          "vi": "Ngon từ những",
-          "en": "Good food in"
+          "vi": "Tình yêu ẩm thực,",
+          "en": "A love of food,"
         },
         {
-          "vi": "điều giản dị.",
-          "en": "the simple things."
+          "vi": "con người và Motueka.",
+          "en": "people and Motueka."
         }
       ],
       "intro": {
-        "vi": "Một món ăn được làm vừa tới, một chiếc bàn được chuẩn bị chu đáo và một cuộc trò chuyện không cần vội. Đó là cách Elevation Cafe Motueka NZ muốn bắt đầu mỗi cuộc hẹn cùng bạn.",
-        "en": "A dish cooked just right, a thoughtfully set table, and a conversation without a deadline. That is how we hope every visit to Elevation Cafe Motueka NZ begins."
+        "vi": "Gặp gỡ Chinh, Huy và đội ngũ đứng sau Elevation Cafe. Tình yêu dành cho ẩm thực, lòng hiếu khách và cộng đồng đang mở ra chương mới cho quán cà phê được yêu mến tại Motueka.",
+        "en": "Meet Chinh, Huy and the team behind Elevation Cafe. Their shared love of food, hospitality and community is shaping a new chapter for this much-loved Motueka cafe."
       },
       "blocks": [
         {
           "type": "image",
-          "src": "images/restaurant/about-dining-room.jpg",
+          "src": "images/about/team.jpg",
           "alt": {
-            "vi": "Bàn ăn gỗ được bày biện trong không gian nhà hàng với ánh sáng ấm và ghế màu kem",
-            "en": "A set wooden dining table in a warmly lit restaurant with cream chairs"
+            "vi": "Chinh, Huy và đội ngũ Elevation Cafe",
+            "en": "Chinh, Huy and the Elevation Cafe team"
           },
           "caption": {
-            "vi": "Tông gỗ ấm, ánh sáng dịu và một bàn ăn sẵn sàng cho cuộc gặp.",
-            "en": "Warm wood, soft light, and a table ready for good company."
+            "vi": "Chinh, Huy và đội ngũ cùng chăm chút trải nghiệm cho mỗi vị khách.",
+            "en": "Chinh, Huy and the team welcome guests to Elevation Cafe."
           }
         },
         {
           "type": "text",
           "heading": {
-            "vi": "Bắt đầu từ nguyên liệu",
-            "en": "It starts with the ingredients"
+            "vi": "Chương mới tại một địa điểm thân quen",
+            "en": "A new chapter for a local favourite"
           },
           "paragraphs": [
             {
-              "vi": "Ở Elevation Cafe Motueka NZ, chúng tôi tin rằng hương vị ngon bắt đầu từ việc hiểu và tôn trọng từng nguyên liệu. Một miếng cá mềm mọng, bó rau còn độ giòn hay chút hương thơm từ thảo mộc đều có vai trò riêng trong một món ăn cân bằng. Cách chế biến vì thế cần vừa đủ để làm nổi bật những điều ấy.",
-              "en": "At Elevation Cafe Motueka NZ, we believe good flavor starts with understanding and respecting each ingredient. Tender fish, crisp vegetables, and fragrant herbs each bring something to a balanced dish. Our cooking aims to let those qualities shine."
+              "vi": "Sau nhiều tháng tìm kiếm, Chinh và Huy chọn tiếp quản Elevation Cafe — quán có lịch sử khoảng 15 năm và được biết đến với cà phê chất lượng cùng những món ăn địa phương. Họ mang theo kinh nghiệm, nguồn cảm hứng riêng và mong muốn tiếp tục phục vụ cộng đồng Motueka.",
+              "en": "After months of searching, Chinh and Huy chose Elevation Cafe, a local favourite with around 15 years of history and a reputation for good coffee and local food. They bring their own experience and a shared wish to keep serving the Motueka community."
             },
             {
-              "vi": "Thực đơn được xây dựng quanh những lựa chọn dễ thưởng thức: cá hồi áp chảo, bò nướng tiêu đen, cơm gà nướng sả và những phần salad tươi mát. Mỗi món mang một sắc thái khác nhau, để bạn có thể chọn theo khẩu vị, thời điểm trong ngày hoặc đơn giản là điều mình đang muốn ăn.",
-              "en": "Our menu brings together approachable favorites: pan-seared salmon, black pepper beef, lemongrass chicken rice, and fresh salads. Each has its own character, giving you room to choose by taste, occasion, or simply what you feel like eating today."
+              "vi": "Đối với họ, quán không chỉ là nơi kinh doanh mà còn là điểm hẹn thân thiện, nơi mọi người có thể thưởng thức món ngon và cảm thấy được chào đón.",
+              "en": "For them, the cafe is more than a business: it is a welcoming place for neighbours to share a meal and feel at home."
             }
           ]
         },
         {
           "type": "text",
           "heading": {
-            "vi": "Chăm chút từ căn bếp",
-            "en": "Care in every detail"
+            "vi": "Hành trình của Chinh",
+            "en": "Chinh's journey"
           },
           "paragraphs": [
             {
-              "vi": "Trước khi một chiếc đĩa được mang ra bàn, có nhiều chi tiết nhỏ cần được để tâm: độ chín của phần thịt, nhiệt độ khi phục vụ, lượng sốt và sự kết hợp giữa các thành phần. Chúng tôi hướng đến cách trình bày gọn gàng, rõ ràng, để vẻ hấp dẫn đến từ chính món ăn.",
-              "en": "Before a plate leaves the kitchen, many small details deserve attention: the cooking temperature, the texture, the amount of sauce, and the balance of its components. We favor thoughtful, uncluttered presentation that lets the food speak for itself."
+              "vi": "Lớn lên ở Việt Nam, Chinh khởi đầu sự nghiệp với vai trò giáo viên hóa học trước khi tìm thấy niềm yêu thích với ngành dịch vụ và điều hành một quán cà phê tại quê nhà. Năm 2016, cô đến New Zealand, học làm vườn và cắm hoa ở Nelson.",
+              "en": "Raised in Vietnam, Chinh began her career as a high-school chemistry teacher before discovering hospitality and running a cafe in her hometown. She moved to New Zealand in 2016 and later studied horticulture and floristry in Nelson."
             },
             {
-              "vi": "Với cá hồi áp chảo, đó là lớp da vàng nhẹ đi cùng phần cá mềm và sốt bơ chanh thơm dịu. Với salad, đó là sự hài hòa giữa rau lá, vị béo của bơ, trái cây và các loại hạt. Những tương phản vừa phải giúp mỗi lần thưởng thức có thêm một chút thú vị.",
-              "en": "For pan-seared salmon, that means lightly crisp skin, tender fish, and a delicate lemon-butter sauce. For a salad, it is the balance of fresh leaves, creamy avocado, fruit, and toasted seeds. Gentle contrasts make each bite a little more interesting."
+              "vi": "Tình yêu cây cối của Chinh góp phần tạo nên không gian nhiều sắc xanh tại quán. Cô cũng tiếp tục trau dồi kỹ năng pha chế và yêu thích chào đón khách bằng nụ cười mỗi ngày.",
+              "en": "Chinh's love of plants helps shape the cafe's leafy, welcoming atmosphere. She is also growing her barista skills and enjoys greeting guests each day."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "heading": {
+            "vi": "Hành trình của Huy",
+            "en": "Huy's journey"
+          },
+          "paragraphs": [
+            {
+              "vi": "Huy lớn lên trong gia đình có truyền thống nấu nướng, và niềm yêu thích ẩm thực bắt đầu từ căn bếp nhà mình. Sau nhiều năm rèn nghề tại một nhà hàng châu Á ở Nelson, anh mang sự sáng tạo và cảm hứng từ quê hương vào thực đơn tại Elevation Cafe.",
+              "en": "Huy grew up in a family where cooking was part of everyday life. After honing his skills at an Asian restaurant in Nelson, he brought his creativity and inspiration from home to the Elevation Cafe kitchen."
+            },
+            {
+              "vi": "Anh thích phát triển những món mới và chia sẻ hương vị Việt Nam cùng câu chuyện phía sau mỗi món ăn với cộng đồng địa phương.",
+              "en": "He enjoys creating new dishes and sharing Vietnamese flavours, along with the stories behind them, with the local community."
             }
           ]
         },
         {
           "type": "image",
-          "src": "images/restaurant/about-kitchen.jpg",
+          "src": "images/about/bun-cha.jpg",
           "alt": {
-            "vi": "Đầu bếp hoàn thiện đĩa cá hồi áp chảo cùng măng tây và cà chua bằng một nhánh thảo mộc",
-            "en": "A chef finishes a salmon dish with asparagus, tomatoes, and a fresh herb"
+            "vi": "Bún chả Hà Nội với thịt nướng và bún tươi",
+            "en": "Hanoi-style bun cha with grilled pork and noodles"
           },
           "caption": {
-            "vi": "Một thao tác nhỏ trong căn bếp, một phần của sự chỉn chu trên bàn ăn.",
-            "en": "A small finishing touch in the kitchen makes a difference at the table."
+            "vi": "Bún chả Hà Nội — một món Việt nhà làm trong thực đơn.",
+            "en": "Bun cha, Hanoi-style grilled pork noodles, on the menu."
           }
         },
         {
           "type": "quote",
           "text": {
-            "vi": "Chăm chút những điều nhỏ, để bạn được tận hưởng bữa ăn theo cách của mình.",
-            "en": "We take care of the little things, so you can enjoy the moment."
+            "vi": "Một món ăn ngon có thể mang theo hương vị quê nhà và kết nối mọi người quanh bàn ăn.",
+            "en": "A good meal can carry the flavours of home and bring people together around the table."
           }
         },
         {
           "type": "text",
           "heading": {
-            "vi": "Ngồi lại và thưởng thức",
-            "en": "Stay a while and savor"
+            "vi": "Hương vị Việt tại Motueka",
+            "en": "Vietnamese flavours in Motueka"
           },
           "paragraphs": [
             {
-              "vi": "Elevation Cafe Motueka NZ cũng dành sự quan tâm cho những gì diễn ra xung quanh chiếc đĩa. Chất liệu gỗ, gam màu trầm và ánh sáng ấm tạo nên một không khí gần gũi, phù hợp với bữa ăn hai người, buổi gặp bạn bè hay một cuộc sum họp gia đình. Không cần một dịp thật lớn để cùng nhau có một bữa ăn đáng nhớ.",
-              "en": "We also care about what surrounds the plate. Warm wood, deep colors, and soft lighting create a welcoming setting for two, a catch-up with friends, or a family meal. A memorable dinner does not always need a special occasion."
+              "vi": "Chinh và Huy tiếp tục phục vụ những món Kiwi quen thuộc, đồng thời giới thiệu các món Việt nhà làm được chế biến với sự chăm chút và nguyên liệu tươi.",
+              "en": "Chinh and Huy continue to serve familiar Kiwi favourites while introducing homemade Vietnamese dishes prepared with care and fresh ingredients."
             },
             {
-              "vi": "Bạn có thể bắt đầu bằng việc dạo qua thực đơn, chọn một món quen hoặc thử một hương vị mới. Nếu đi cùng nhóm hay muốn chuẩn bị cho một dịp riêng, hãy để lại lời nhắn khi đặt bàn. Chúng tôi mong mỗi cuộc hẹn tại Elevation Cafe Motueka NZ đều có sự thoải mái, từ lúc chọn món đến khi câu chuyện cuối cùng được kể xong.",
-              "en": "Start by exploring the menu, choosing a familiar favorite, or trying something new. If you are visiting with a group or planning an occasion, leave us a note with your reservation. We want you to feel at ease, from choosing your meal to the last story shared at the table."
+              "vi": "Thực đơn có phở bò hoặc gà, chả giò giòn, bún chả Hà Nội và bánh xèo — những hương vị mang một phần ký ức gia đình đến với cộng đồng Motueka.",
+              "en": "The menu features pho with beef or chicken, crispy spring rolls, Hanoi-style bun cha, and banh xeo. Each dish brings a taste of family tradition to the Motueka community."
             }
           ]
+        },
+        {
+          "type": "image",
+          "src": "images/about/banh-xeo.jpg",
+          "alt": {
+            "vi": "Bánh xèo Việt Nam vàng giòn",
+            "en": "Golden, crispy Vietnamese banh xeo pancake"
+          },
+          "caption": {
+            "vi": "Bánh xèo — bánh xèo Việt Nam giòn rụm.",
+            "en": "Banh xeo, the crispy Vietnamese savoury pancake."
+          }
         }
       ],
       "menuButton": {
