@@ -1,0 +1,102 @@
+html:is([data-theme="forest"], [data-theme="burgundy"]) {
+  --paper: #081d16;
+  --ink: #f4edcf;
+  --orange: #e4bf70;
+  --night-muted: #bdc79e;
+  --night-line: #b596514d;
+  --night-panel: #0d281e;
+  --gold-filter: brightness(0) saturate(100%) invert(81%) sepia(33%) saturate(541%) hue-rotate(350deg) brightness(94%) contrast(92%);
+  background: #081d16;
+}
+html:is([data-theme="forest"], [data-theme="burgundy"]) body {
+  background:
+    radial-gradient(ellipse at 6% 5%, #64754024, transparent 27%),
+    radial-gradient(ellipse at 87% 31%, #41633922, transparent 40%),
+    repeating-linear-gradient(122deg, #ffffff03 0 1px, #00000006 1px 3px),
+    radial-gradient(ellipse at 50% 42%, #102c20, #061b14 83%);
+  color: var(--ink);
+}
+html:is([data-theme="forest"], [data-theme="burgundy"]) .site-header { background: #071b15; box-shadow: inset 0 -1px 0 #bc9c4a0d; }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .brand-logo { filter: var(--gold-filter); }
+html:is([data-theme="forest"], [data-theme="burgundy"]) :is(.header-note, .eyebrow, .detail-kicker, .navigation-kicker, .navigation-view .navigation-kicker) { color: #e4bf70; }
+html:is([data-theme="forest"], [data-theme="burgundy"]) :is(.header-note::before, .eyebrow::before, .eyebrow::after) { background: #d4af62a6; }
+html:is([data-theme="forest"], [data-theme="burgundy"]) :is(.table-caption, .orbit-hint, .description, .preparation, .menu-heading h2, .menu-counter, .card-price, .ingredient-tags span) { color: var(--night-muted); }
+html:is([data-theme="forest"], [data-theme="burgundy"]) :is(.table-caption b, .menu-heading h2 b, .dish-card strong, .detail-panel h2) { color: var(--ink); }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .explore-dish { background: #f4edcf; color: #163629; border-color: #d9bc75; box-shadow: none; }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .explore-arrow { background: #edc46e; }
+html:is([data-theme="forest"], [data-theme="burgundy"]) :is(.meta-divider, .pager button) { background: #bd9e606e; }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .ingredient-tags span + span { border-color: #bd9e606e; }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .pager button.active { background: #e6be6a; }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .icon { filter: var(--gold-filter); }
+html:is([data-theme="forest"], [data-theme="burgundy"]) :is(.menu-link, .arrow-button, .dialog-close, .navigation-close) { color: #e6be6a; border-color: #c7a455; background: #071d154d; }
+html:is([data-theme="forest"], [data-theme="burgundy"]) :is(.menu-link:hover, .arrow-button:hover, .dialog-close:hover, .navigation-close:hover) { background: #d9b568; color: #10251a; border-color: #e6be6a; }
+html:is([data-theme="forest"], [data-theme="burgundy"]) :is(.menu-link:hover, .arrow-button:hover) .icon { filter: brightness(0) saturate(100%) invert(12%) sepia(24%) saturate(858%) hue-rotate(97deg); }
+html:is([data-theme="forest"], [data-theme="burgundy"])[data-table="walnut"] .table-surface { filter: saturate(1.05) brightness(.93) drop-shadow(0 1px 1px #d7a84d99) drop-shadow(0 15px 22px #0009); }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .plate-position img { filter: drop-shadow(0 16px 13px #0006); }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .dish-card { border-color: #b99b58; background: #0b221a80; }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .dish-card:hover { border-color: #e6c67c; background: #193b2a; }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .dish-card[aria-pressed="true"] { border-color: #dbb565; background: linear-gradient(135deg, #ebcf85, #bc934b); }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .dish-card[aria-pressed="true"] :is(strong, .card-price) { color: #10251a; }
+html:is([data-theme="forest"], [data-theme="burgundy"]) :is(.plate-solid, .detail-panel) { background: var(--night-panel); border-color: #8e7946; }
+html:is([data-theme="forest"], [data-theme="burgundy"]) :is(.detail-copy, .detail-facts small, .detail-price-label, .ingredient-name) { color: var(--night-muted); }
+html:is([data-theme="forest"], [data-theme="burgundy"]) :is(.detail-section, .detail-bottom, .ingredient-item) { border-color: var(--night-line); }
+html:is([data-theme="forest"], [data-theme="burgundy"]) :is(.ingredient-item, .detail-facts div) { background: #17382a; }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .ingredient-photo { background-color: #e7e4d8; }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .order-button { color: #10251a; border-color: #dfb86c; background: linear-gradient(135deg, #e6c67c, #bc934b); }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .order-button .icon { filter: brightness(0) saturate(100%) invert(12%) sepia(24%) saturate(858%) hue-rotate(97deg); }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .order-button:hover { background: #e5c47b; border-color: #f0d693; box-shadow: 0 5px 14px #e6be6a15; }
+
+html:is([data-theme="forest"], [data-theme="burgundy"]) .site-navigation {
+  --drawer-surface: linear-gradient(145deg, #112c21, #081e16);
+  --drawer-frame: #b5985b;
+  --drawer-line: #d5b16a41;
+  --drawer-accent: #f2d697;
+  --drawer-highlight: #d9b56619;
+}
+html:is([data-theme="forest"], [data-theme="burgundy"]) :is(.navigation-note, .navigation-hours > div) { border-color: var(--night-line); }
+html:is([data-theme="forest"], [data-theme="burgundy"]) :is(.navigation-view p, .navigation-form label) { color: var(--night-muted); }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .navigation-dialog { background: var(--night-panel); border-color: #8c7444; box-shadow: 0 24px 80px #0006; }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .navigation-primary { border-color: #d2ae61; background: linear-gradient(135deg, #e6c67c, #bc934b); color: #10251a; }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .navigation-primary:hover { background: #e6c67c; }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .navigation-form :is(input, textarea, select) { background: #081e16; border-color: #8c794b; color: var(--ink); color-scheme: dark; }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .navigation-form :is(input, textarea)::placeholder { color: #a8b28c; }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .navigation-form label:has(> select)::after { border-color: #d2ae61; }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .navigation-form .navigation-form-status { background: #1c3d2b; }
+
+html:is([data-theme="forest"], [data-theme="burgundy"]) :is(.navigation-dialog-close, .detail-panel > .dialog-close) { background: var(--night-panel); }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .about-figure figcaption { color: var(--night-muted); }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .about-article blockquote { background: #e4bf7010; }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .about-actions { border-color: var(--night-line); }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .navigation-dialog .about-secondary { background: transparent; color: var(--ink); border-color: #b59651; }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .navigation-dialog .about-secondary:hover { background: #e4bf7014; }
+
+html[data-theme="burgundy"] {
+  --paper: #2b0d1b;
+  --ink: #faecd8;
+  --orange: #e8bb70;
+  --night-muted: #d5b6b2;
+  --night-line: #c6906e45;
+  --night-panel: #3d1323;
+  background: #2b0d1b;
+}
+html[data-theme="burgundy"] body {
+  background: radial-gradient(ellipse at 9% 5%, #b9746520, transparent 28%),
+    radial-gradient(ellipse at 85% 35%, #91465c24, transparent 42%),
+    repeating-linear-gradient(122deg, #ffffff03 0 1px, #00000006 1px 3px),
+    radial-gradient(ellipse at 50% 42%, #4b1b2d, #260b18 85%);
+}
+html[data-theme="burgundy"] .site-header { background: #270b18; }
+html[data-theme="burgundy"] .site-navigation { --drawer-surface: linear-gradient(145deg, #48182a, #2c0d1c); }
+html[data-theme="burgundy"] :is(.menu-link, .arrow-button, .dialog-close, .navigation-close) { background-color: #2b0d1b80; }
+html[data-theme="burgundy"] :is(.menu-link:hover, .arrow-button:hover, .dialog-close:hover, .navigation-close:hover) { background-color: #d9b568; }
+html[data-theme="burgundy"] .dish-card { background-color: #35101f9c; }
+html[data-theme="burgundy"] .dish-card:hover { background-color: #5c2438; }
+html[data-theme="burgundy"] :is(.ingredient-item, .detail-facts div) { background: #502235; }
+html[data-theme="burgundy"] .navigation-form :is(input, textarea, select) { background: #2b0d1b; }
+html[data-theme="burgundy"] .navigation-form :is(input, textarea)::placeholder { color: #bd9da5; }
+html[data-theme="burgundy"] .navigation-form .navigation-form-status { background: #592738; }
+html:is([data-theme="forest"], [data-theme="burgundy"]) :is(.order-summary, .quantity-control, .order-total) { border-color: var(--night-line); }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .order-summary { background: #ffffff08; }
+html:is([data-theme="forest"], [data-theme="burgundy"]) :is(.order-summary span, .dish-order-form .navigation-form-demo) { color: var(--night-muted); }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .order-back { color: var(--orange); border-color: var(--night-line); }
+html:is([data-theme="forest"], [data-theme="burgundy"]) .navigation-form :is(input, textarea, select):focus { box-shadow: 0 0 0 3px #e4bf700c; }

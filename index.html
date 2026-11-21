@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en" data-table="walnut">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="theme-color" content="#f5f1e8" />
+        <meta
+            name="description"
+            content="Explore Elevation Cafe Motueka NZ's rotating menu and find your next favorite dish."
+        />
+        <title>Elevation Cafe Motueka NZ — Good Food, Made Simple</title>
+        <script src="config/settings.js"></script>
+        <script src="js/theme.js"></script>
+        <link rel="stylesheet" href="css/table-presets.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/themes.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <a class="brand" href="#" aria-label="Elevation Cafe Motueka NZ — Home"
+                ><img class="brand-logo" src="images/logo-elevation-cafe.svg" alt="" width="224" height="75" /></a
+            ><span class="header-note">Một vòng vị ngon</span
+            ><button class="menu-link" id="open-navigation" type="button" aria-label="Mở menu nhà hàng" aria-controls="site-navigation" aria-expanded="false" aria-haspopup="dialog" title="Menu nhà hàng"
+                ><img class="icon" src="images/icons/menu.svg" alt="" aria-hidden="true" /></button>
+        </header>
+
+        <dialog class="site-navigation" id="site-navigation" aria-labelledby="navigation-title">
+            <button type="button" class="navigation-close" id="close-navigation" aria-label="Đóng menu nhà hàng" autofocus>×</button>
+            <div class="navigation-body">
+                <div class="navigation-header">
+                    <img class="navigation-photo" alt="" width="1536" height="1024" decoding="async" />
+                    <img class="navigation-logo" src="images/logo-elevation-cafe.svg" alt="Elevation Cafe Motueka NZ" width="224" height="75" />
+                    <p class="sr-only" id="navigation-title">Welcome to Elevation Cafe Motueka NZ</p>
+                </div>
+                <div class="navigation-content">
+                    <div class="theme-switcher">
+                        <div class="theme-toggle" id="theme-toggle" role="group" aria-label="Chọn giao diện">
+                            <button class="theme-option" type="button" data-theme-option="cream" aria-pressed="true"><i class="theme-swatch" aria-hidden="true"></i>Kem ấm</button>
+                            <button class="theme-option" type="button" data-theme-option="forest" aria-pressed="false"><i class="theme-swatch" aria-hidden="true"></i>Xanh đêm</button>
+                            <button class="theme-option" type="button" data-theme-option="burgundy" aria-pressed="false"><i class="theme-swatch" aria-hidden="true"></i>Bordeaux</button>
+                        </div>
+                        <span class="sr-only" id="theme-status" role="status"></span>
+                    </div>
+                    <nav class="navigation-links" aria-label="Menu nhà hàng">
+                        <a href="#" data-navigation-target="home" aria-current="page"><img src="images/icons/home.svg" alt="" width="22" height="22" /><span>Trang chủ</span></a>
+                        <a href="#thuc-don" data-navigation-target="menu"><img src="images/icons/cloche.svg" alt="" width="22" height="22" /><span>Món ăn</span></a>
+                        <button type="button" data-navigation-view="about"><img src="images/icons/restaurant.svg" alt="" width="22" height="22" /><span>Về nhà hàng</span></button>
+                        <button type="button" data-navigation-view="reservation"><img src="images/icons/calendar.svg" alt="" width="22" height="22" /><span>Đặt bàn</span></button>
+                        <button type="button" data-navigation-view="events"><img src="images/icons/glasses.svg" alt="" width="22" height="22" /><span>Tiệc &amp; sự kiện</span></button>
+                        <button type="button" data-navigation-view="hours"><img src="images/icons/opening-hours.svg" alt="" width="22" height="22" /><span>Giờ mở cửa</span></button>
+                        <button type="button" data-navigation-view="contact"><img src="images/icons/mail.svg" alt="" width="22" height="22" /><span>Liên hệ</span></button>
+                    </nav>
+                    <div class="navigation-footer">
+                        <div class="navigation-info">
+                            <p class="navigation-info-hours"><img src="images/icons/clock.svg" alt="" width="17" height="17" /><span>Mỗi ngày · 11:00 – 22:00</span></p>
+                            <a class="navigation-address" target="_blank" rel="noopener noreferrer">
+                                <img src="images/icons/map-pin.svg" alt="" width="17" height="17" />
+                                <span>218 High Street, Motueka, Port Motueka, New Zealand</span>
+                            </a>
+                        </div>
+                        <div class="language-switcher" role="group" aria-label="Ngôn ngữ">
+                            <img src="images/icons/globe.svg" alt="" width="19" height="19" />
+                            <button type="button" data-language-option="vi" aria-pressed="false">Tiếng Việt</button>
+                            <button type="button" data-language-option="en" aria-pressed="true">English</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </dialog>
+
+        <dialog class="navigation-dialog" id="navigation-dialog" aria-labelledby="navigation-view-title">
+            <button type="button" class="navigation-close navigation-dialog-close" id="close-navigation-dialog" aria-label="Đóng nội dung">×</button>
+            <div class="navigation-view navigation-dialog-scroll"></div>
+        </dialog>
+
+        <template id="navigation-about"></template>
+        <template id="navigation-reservation">
+            <p class="navigation-kicker">See you at Elevation Cafe Motueka NZ</p>
+            <h2 id="navigation-view-title" tabindex="-1">Đặt bàn</h2>
+            <p>Chia sẻ thời gian và số khách để chúng tôi chuẩn bị cho cuộc hẹn của bạn.</p>
+            <form class="navigation-form" data-navigation-form="reservation">
+                <label>Họ và tên<input name="name" autocomplete="name" required maxlength="100" /></label>
+                <label>Số điện thoại<input name="phone" type="tel" autocomplete="tel" inputmode="tel" required maxlength="25" /></label>
+                <div class="navigation-form-row"><label>Ngày đến<input name="date" type="date" required /></label><label>Giờ đến<input name="time" type="time" required /></label></div>
+                <label>Số khách<select name="guests"><option>2 người</option><option>1 người</option><option>3 người</option><option>4 người</option><option>5 người</option><option>6 người</option><option>Nhóm trên 6 người</option></select></label>
+                <label>Lời nhắn<textarea name="message" rows="3" placeholder="Dịp đặc biệt, vị trí bàn hoặc lưu ý về món ăn…" maxlength="1000"></textarea></label>
+                <p class="navigation-form-demo">Form minh họa, chưa gửi yêu cầu đặt bàn đến nhà hàng.</p>
+                <button type="submit" class="navigation-primary">Gửi yêu cầu đặt bàn</button>
+                <p class="navigation-form-status" role="status" hidden></p>
+            </form>
+        </template>
+        <template id="navigation-events">
+            <p class="navigation-kicker">Những dịp đáng nhớ</p>
+            <h2 id="navigation-view-title" tabindex="-1">Tiệc &amp; sự kiện</h2>
+            <p>From an intimate birthday dinner to a gathering with colleagues, Elevation Cafe Motueka NZ can help you plan a meal that suits the occasion.</p>
+            <div data-event-notes></div>
+            <button type="button" class="navigation-primary" data-navigation-view="reservation">Trao đổi về buổi tiệc</button>
+        </template>
+        <template id="navigation-hours">
+            <p class="navigation-kicker">Sắp xếp cuộc hẹn</p>
+            <h2 id="navigation-view-title" tabindex="-1">Giờ mở cửa</h2>
+            <dl class="navigation-hours"></dl>
+            <p>Đặt bàn trước để chúng tôi chuẩn bị chu đáo, nhất là khi bạn đi cùng nhóm hoặc có yêu cầu riêng.</p>
+            <button type="button" class="navigation-primary" data-navigation-view="reservation">Đặt bàn</button>
+        </template>
+        <template id="navigation-contact">
+            <p class="navigation-kicker">Connect with Elevation Cafe Motueka NZ</p>
+            <h2 id="navigation-view-title" tabindex="-1">Liên hệ</h2>
+            <p>Have a question about the menu, an upcoming gathering, or something you would like to share? Send Elevation Cafe Motueka NZ a message.</p>
+            <form class="navigation-form" data-navigation-form="contact">
+                <label>Họ và tên<input name="name" autocomplete="name" required maxlength="100" /></label>
+                <label>Email<input name="email" type="email" autocomplete="email" required maxlength="254" /></label>
+                <label>Lời nhắn<textarea name="message" rows="5" required maxlength="2000"></textarea></label>
+                <p class="navigation-form-demo">Form minh họa, chưa gửi lời nhắn đến nhà hàng.</p>
+                <button type="submit" class="navigation-primary">Gửi lời nhắn</button>
+                <p class="navigation-form-status" role="status" hidden></p>
+            </form>
+        </template>
+
+        <main class="experience">
+            <section
+                class="stage"
+                aria-label="Xem chi tiết món đang chọn"
+                aria-haspopup="dialog"
+                role="button"
+                tabindex="0"
+                id="stage"
+            >
+                <div class="table-wheel" id="wheel"><div class="table-surface"></div></div>
+            </section>
+            <div class="hero-side-content">
+                <div class="table-caption">
+                    <span class="table-kicker">From the Elevation Cafe Motueka NZ kitchen</span>
+                    <b>Ngon từ<br />điều<br />giản dị.</b>
+                    <p>Nguyên liệu tươi,<br />hương vị trọn vẹn.</p>
+                </div>
+                <div class="orbit-hint">
+                    <button class="explore-dish" id="explore-dish" type="button" aria-haspopup="dialog" aria-controls="dish-dialog">
+                        <span>Khám phá<br />món ăn</span>
+                        <span class="explore-arrow" aria-hidden="true"><img src="images/icons/arrow-right.svg" alt="" /></span>
+                    </button>
+                    <p>Bấm vào đĩa để xem món.</p>
+                </div>
+            </div>
+            <section class="details" id="details" aria-live="polite" aria-atomic="true">
+                <div class="eyebrow" id="category"></div>
+                <h1 id="dish-name"></h1>
+                <p class="description" id="description"></p>
+                <div class="dish-meta">
+                    <span class="price" id="price"></span><span class="meta-divider"></span
+                    ><span class="preparation"
+                        ><img class="icon" src="images/icons/clock.svg" alt="" aria-hidden="true" /><span id="time"></span></span
+                    ><span class="preparation">1 phần</span>
+                </div>
+                <div class="ingredient-tags" id="tags"></div>
+            </section>
+            <section class="menu-section" id="thuc-don" aria-label="Chọn món ăn">
+                <div class="menu-heading">
+                    <h2>Hôm nay, bạn muốn <b>thưởng thức gì?</b></h2>
+                    <span class="menu-counter" id="counter" aria-live="polite">TRANG 01 / 03</span>
+                </div>
+                <div class="carousel">
+                    <button class="arrow-button" id="previous" aria-label="Trang menu trước">
+                        <img class="icon" src="images/icons/chevron-left.svg" alt="" aria-hidden="true" />
+                    </button>
+                    <div class="menu-track" id="menu-track" aria-label="Danh sách món"></div>
+                    <button class="arrow-button" id="next" aria-label="Trang menu tiếp theo">
+                        <img class="icon" src="images/icons/chevron-right.svg" alt="" aria-hidden="true" />
+                    </button>
+                </div>
+                <div class="pager" id="pager" aria-label="Chọn trang menu"></div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="footer-logo-link" href="#" data-navigation-target="home"><img class="footer-logo" src="images/logo-elevation-cafe.svg" alt="Elevation Cafe Motueka NZ" width="224" height="75" /></a>
+                    <p class="footer-description"></p>
+                </div>
+                <nav class="footer-navigation" aria-labelledby="footer-navigation-title">
+                    <h2 id="footer-navigation-title"></h2>
+                    <a href="#" data-navigation-target="home">Trang chủ</a>
+                    <a href="#thuc-don" data-navigation-target="menu">Món ăn</a>
+                    <button type="button" data-navigation-view="about">Về nhà hàng</button>
+                    <button type="button" data-navigation-view="contact">Liên hệ</button>
+                </nav>
+                <div class="footer-contact">
+                    <h2 id="footer-contact-title"></h2>
+                    <p class="footer-hours"></p>
+                    <a class="footer-address" target="_blank" rel="noopener noreferrer"><img src="images/icons/map-pin.svg" alt="" width="20" height="20" /><span></span></a>
+                    <div class="footer-contact-links"><a class="footer-phone"></a><a class="footer-email"></a></div>
+                    <button class="footer-reservation" type="button" data-navigation-view="reservation"></button>
+                </div>
+            </div>
+            <div class="footer-bottom"><p><span aria-hidden="true">© </span><span id="footer-year"></span> <span class="footer-copyright"></span></p><a href="#" class="footer-top" data-navigation-target="home"></a></div>
+        </footer>
+
+        <dialog class="dish-dialog" id="dish-dialog" aria-labelledby="modal-name" tabindex="-1">
+            <div class="plate-flight-layer" aria-hidden="true">
+                <div class="flying-plate" id="flying-plate">
+                    <img alt="" /><span class="plate-solid"></span>
+                </div>
+            </div>
+            <span class="sr-only" id="detail-status" role="status"></span>
+            <article class="detail-panel" id="detail-panel" hidden>
+                <button type="button" class="dialog-close" aria-label="Đóng chi tiết món">×</button>
+                <div class="detail-panel-scroll" id="detail-panel-scroll">
+                <div class="dish-info-view" id="dish-info-view">
+                <div class="detail-kicker" id="modal-category"></div>
+                <h2 id="modal-name"></h2>
+                <p class="detail-copy" id="modal-description"></p>
+                <section class="detail-section">
+                    <h3 id="ingredients-heading">Nguyên liệu nổi bật</h3>
+                    <ul class="detail-ingredients" id="modal-ingredients" aria-labelledby="ingredients-heading"></ul>
+                </section>
+                <div class="detail-facts">
+                    <div><small>Thời gian chuẩn bị</small><strong id="modal-time"></strong></div>
+                    <div><small>Khẩu phần</small><strong>1 người thưởng thức</strong></div>
+                </div>
+                <div class="detail-bottom">
+                    <div>
+                        <span class="detail-price-label">Giá / phần</span>
+                        <div class="detail-price" id="modal-price"></div>
+                    </div>
+                    <button type="button" class="order-button" id="order-dish">
+                        <img class="icon" src="images/icons/shopping-bag.svg" alt="" aria-hidden="true" />Đặt hàng
+                    </button>
+                </div>
+                </div>
+                <section id="dish-order-view" hidden>
+                    <div class="order-view-header">
+                        <h2 id="order-title" tabindex="-1">Đặt món</h2>
+                        <button type="button" class="order-back" id="back-to-dish">Xem lại món</button>
+                    </div>
+                    <form class="navigation-form dish-order-form" id="dish-order-form">
+                        <div class="order-summary"><img id="order-image" alt="" width="60" height="60" /><div><strong id="order-selected-name"></strong><span id="order-unit-price"></span></div></div>
+                        <div class="order-quantity"><label for="order-quantity">Số lượng</label><div class="quantity-control"><button id="order-minus" type="button" aria-label="Giảm số lượng">−</button><input id="order-quantity" name="quantity" type="number" min="1" max="99" step="1" value="1" inputmode="numeric" required /><button id="order-plus" type="button" aria-label="Tăng số lượng">+</button></div></div>
+                        <label>Họ và tên<input name="name" autocomplete="name" maxlength="100" required /></label>
+                        <label>Số điện thoại<input name="phone" type="tel" autocomplete="tel" minlength="7" maxlength="25" required /></label>
+                        <label class="order-full-row">Cách nhận món<select name="fulfillment" id="order-fulfillment"><option value="pickup">Nhận tại nhà hàng</option><option value="delivery">Giao đến địa chỉ</option></select></label>
+                        <label class="order-full-row" id="order-address-label" hidden>Địa chỉ giao món<input id="order-address" name="address" autocomplete="street-address" maxlength="300" disabled /></label>
+                        <label class="order-full-row">Ghi chú<textarea name="notes" rows="2" maxlength="1000" placeholder="Lưu ý về món ăn hoặc thời gian nhận món…"></textarea></label>
+                        <div class="order-total"><span>Tạm tính</span><strong id="order-total"></strong></div>
+                        <p class="navigation-form-demo order-full-row">Form minh họa, chưa gửi đơn hàng đến nhà hàng.</p>
+                        <button type="submit" class="navigation-primary order-full-row">Gửi yêu cầu đặt món</button>
+                        <p class="navigation-form-status order-full-row" id="order-status" role="status" hidden></p>
+                    </form>
+                </section>
+                </div>
+            </article>
+        </dialog>
+
+        <script src="config/content.js"></script>
+        <script src="config/menu.js"></script>
+        <script src="config/translations-en.js"></script>
+        <script src="js/content.js"></script>
+        <script src="js/language.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/navigation.js"></script>
+    </body>
+</html>
